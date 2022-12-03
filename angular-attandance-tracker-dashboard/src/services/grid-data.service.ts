@@ -34,6 +34,22 @@ export class GridDataService {
         "HomePhone": "(206) 555-9482",
         "Extension": "3457",
         "ReportsTo": null
+    },
+    {
+        "EmployeeID": 3,
+        "FullName": "Chris Dickinson",
+        "Position": "Vice President, Finance",
+        "TitleOfCourtesy": "Dr.",
+        "BirthDate": "1972-05-19T00:00:00.000Z",
+        "HireDate": "2011-09-14T00:00:00.000Z",
+        "Address": "GCW Arena, Oklahoma",
+        "City": "Tacoma",
+        "Region": "WA",
+        "PostalCode": "98401",
+        "Country": "USA",
+        "HomePhone": "(206) 555-9487",
+        "Extension": "3459",
+        "ReportsTo": null
     }];
 
     public getGridData(): any[] {

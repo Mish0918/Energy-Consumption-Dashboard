@@ -4,6 +4,9 @@
   [allowColumnReordering]="true"
   [allowColumnResizing]="true"
   [columnAutoWidth]="true"
+  [showRowLines]="true"
+  [showBorders]="true"
+  [rowAlternationEnabled]="true"
 >
   <dxo-filter-row [visible]="true"></dxo-filter-row>
   <dxo-search-panel [visible]="true"></dxo-search-panel>
@@ -11,4 +14,7 @@
     [enabled]="true"
     mode="select">
   </dxo-column-chooser>
+  <dxo-paging [enabled]="true"
+    [pageSize]="2"
+  ></dxo-paging>
 </dx-data-grid>
