@@ -1,8 +1,9 @@
 import {
-    NgModule, Component, Pipe, PipeTransform, enableProdMode,
+    NgModule, Component, Pipe, PipeTransform, enableProdMode, CUSTOM_ELEMENTS_SCHEMA,
   } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { GridComponent} from './grid.component'
 
 import {
     DxDataGridModule,
@@ -11,7 +12,14 @@ import {
 } from 'devextreme-angular';
 
 @NgModule({
-  imports: [],
-  exports: []
+  declarations: [GridComponent],
+  imports: [
+    BrowserModule,
+    DxDataGridModule,
+    DxTemplateModule,
+    DxBulletModule,
+  ],
+  exports: [GridComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class GridModule { }
