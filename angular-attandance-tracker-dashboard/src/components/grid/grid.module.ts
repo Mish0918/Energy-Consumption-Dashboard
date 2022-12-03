@@ -9,6 +9,7 @@ import {
     DxDataGridModule,
     DxBulletModule,
     DxTemplateModule,
+    DxButtonModule
 } from 'devextreme-angular';
 
 @NgModule({
@@ -18,6 +19,7 @@ import {
     DxDataGridModule,
     DxTemplateModule,
     DxBulletModule,
+    DxButtonModule
   ],
   exports: [GridComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
