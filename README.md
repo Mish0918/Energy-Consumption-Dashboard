@@ -1,7 +1,7 @@
 # Attendance-Tracker-Dashboard
 #For setting up the app on local
 
-Step1: Clone the app using git clone
+Step1: Fork the app in your repo
 
 Step2: Run npm install in the project folder on your local machine
 
