@@ -4,24 +4,15 @@ import {
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { BarChartComponent} from './bar-chart.component'
-
-import {
-    DxDataGridModule,
-    DxBulletModule,
-    DxTemplateModule,
-    DxButtonModule
-} from 'devextreme-angular';
+import { DxChartModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [BarChartComponent],
   imports: [
     BrowserModule,
-    DxDataGridModule,
-    DxTemplateModule,
-    DxBulletModule,
-    DxButtonModule
+    DxChartModule
   ],
   exports: [BarChartComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class GridModule { }
+export class BarChartModule { }

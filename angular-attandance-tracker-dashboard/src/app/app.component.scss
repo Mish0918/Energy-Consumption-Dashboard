@@ -1,3 +1,13 @@
 #heading1 {
     text-align: center;
 }
+#bar-chart-wrapper{
+    display: flex;
+    box-shadow: 5px 5px 5px gray;
+    width: 640px;
+    height: 200px;
+}
+#data-grid-wrapper{
+    display: flex;
+    margin-top: 1.5%;
+}

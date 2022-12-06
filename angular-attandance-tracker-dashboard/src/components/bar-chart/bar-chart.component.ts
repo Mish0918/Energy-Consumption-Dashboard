@@ -1,7 +1,7 @@
 import {
     NgModule, Component, Pipe, PipeTransform, enableProdMode, OnInit,
   } from '@angular/core';
-import { GridDataService } from '../../services/grid-data.service'
+import { BarChartDataService } from '../../services/bar-chart.service'
 
 @Component({
     selector: 'bar-chart',
@@ -14,11 +14,12 @@ import { GridDataService } from '../../services/grid-data.service'
 
     data: any[] = [];
     constructor(
-      private _gridDataService: GridDataService
+      private _barChartDataService: BarChartDataService
     ) {}
 
     ngOnInit(): void {
       console.log("Hello From Bar Chart!!!");
+      this.data = this._barChartDataService.getBarChartData();
     }
 
   }
