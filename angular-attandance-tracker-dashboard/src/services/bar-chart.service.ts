@@ -8,26 +8,23 @@ export class BarChartDataService {
     constructor() {}
 
     private chartData: any[] = [{
-        day: 'Monday',
-        oranges: 3,
-      }, {
-        day: 'Tuesday',
-        oranges: 2,
-      }, {
-        day: 'Wednesday',
-        oranges: 3,
-      }, {
-        day: 'Thursday',
-        oranges: 4,
-      }, {
-        day: 'Friday',
-        oranges: 6,
-      }, {
-        day: 'Saturday',
-        oranges: 11,
-      }, {
-        day: 'Sunday',
-        oranges: 4,
+      country: 'USA',
+      consumption: 2331.6
+    }, {
+      country: 'China',
+      consumption: 1386.1
+    }, {
+      country: 'Russia',
+      consumption: 667.7
+    }, {
+      country: 'Japan',
+      consumption: 514.6
+    }, {
+      country: 'India',
+      consumption: 375.8
+    }, {
+      country: 'Germany',
+      consumption: 330.5
     }];
 
     public getBarChartData() {
