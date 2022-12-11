@@ -4,53 +4,50 @@ import { Injectable } from '@angular/core';
     providedIn: 'root'
 })
 export class GridDataService {
+
     private gridData: any[] = [{
-        "EmployeeID": 1,
-        "FullName": "Nancy Davolio",
-        "Position": "Sales Representative",
-        "TitleOfCourtesy": "Ms.",
-        "BirthDate": "1968-12-08T00:00:00.000Z",
-        "HireDate": "2011-05-01T00:00:00.000Z",
-        "Address": "507 - 20th Ave. E.\r\nApt. 2A",
-        "City": "Seattle",
-        "Region": "WA",
-        "PostalCode": "98122",
-        "Country": "USA",
-        "HomePhone": "(206) 555-9857",
-        "Extension": "5467",
-        "ReportsTo": 2
-    }, {
-        "EmployeeID": 2,
-        "FullName": "Andrew Fuller",
-        "Position": "Vice President, Sales",
-        "TitleOfCourtesy": "Dr.",
-        "BirthDate": "1972-02-19T00:00:00.000Z",
-        "HireDate": "2011-08-14T00:00:00.000Z",
-        "Address": "908 W. Capital Way",
-        "City": "Tacoma",
-        "Region": "WA",
-        "PostalCode": "98401",
-        "Country": "USA",
-        "HomePhone": "(206) 555-9482",
-        "Extension": "3457",
-        "ReportsTo": null
-    },
-    {
-        "EmployeeID": 3,
-        "FullName": "Chris Dickinson",
-        "Position": "Vice President, Finance",
-        "TitleOfCourtesy": "Dr.",
-        "BirthDate": "1972-05-19T00:00:00.000Z",
-        "HireDate": "2011-09-14T00:00:00.000Z",
-        "Address": "GCW Arena, Oklahoma",
-        "City": "Tacoma",
-        "Region": "WA",
-        "PostalCode": "98401",
-        "Country": "USA",
-        "HomePhone": "(206) 555-9487",
-        "Extension": "3459",
-        "ReportsTo": null
-    }];
+        country: 'USA',
+        hydro: 59.8,
+        oil: 937.6,
+        gas: 582,
+        coal: 564.3,
+        nuclear: 187.9,
+      }, {
+        country: 'China',
+        hydro: 74.2,
+        oil: 308.6,
+        gas: 35.1,
+        coal: 956.9,
+        nuclear: 11.3,
+      }, {
+        country: 'Russia',
+        hydro: 40,
+        oil: 128.5,
+        gas: 361.8,
+        coal: 105,
+        nuclear: 32.4,
+      }, {
+        country: 'Japan',
+        hydro: 22.6,
+        oil: 241.5,
+        gas: 64.9,
+        coal: 120.8,
+        nuclear: 64.8,
+      }, {
+        country: 'India',
+        hydro: 19,
+        oil: 119.3,
+        gas: 28.9,
+        coal: 204.8,
+        nuclear: 3.8,
+      }, {
+        country: 'Germany',
+        hydro: 6.1,
+        oil: 123.6,
+        gas: 77.3,
+        coal: 85.7,
+        nuclear: 37.8,
+      }];
 
     public getGridData(): any[] {
         return this.gridData;

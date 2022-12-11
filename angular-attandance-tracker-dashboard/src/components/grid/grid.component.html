@@ -1,6 +1,6 @@
 <dx-data-grid id="dataGrid"
   [dataSource]=data
-  keyExpr="EmployeeID"
+  keyExpr="country"
   [allowColumnReordering]="true"
   [allowColumnResizing]="true"
   [columnAutoWidth]="true"
@@ -15,6 +15,6 @@
     mode="select">
   </dxo-column-chooser>
   <dxo-paging [enabled]="true"
-    [pageSize]="10"
+    [pageSize]="5"
   ></dxo-paging>
 </dx-data-grid>
