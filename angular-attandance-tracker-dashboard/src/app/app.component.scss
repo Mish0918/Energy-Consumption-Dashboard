@@ -1,11 +1,21 @@
 #heading1 {
     text-align: center;
 }
+#chart-container{
+    display: flex;
+}
 #bar-chart-wrapper{
     display: flex;
     box-shadow: 5px 5px 5px gray;
     width: 640px;
     height: 200px;
+}
+#line-chart-wrapper{
+    display: flex;
+    box-shadow: 5px 5px 5px gray;
+    width: 640px;
+    height: 200px;
+    margin-left: 2%;
 }
 #data-grid-wrapper{
     display: flex;

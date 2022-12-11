@@ -3,8 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GridModule } from '../components/grid/grid.module'
-import { BarChartModule } from '../components/bar-chart/bar-chart.module'
+import { GridModule } from '../components/grid/grid.module';
+import { BarChartModule } from '../components/bar-chart/bar-chart.module';
+import { LineChartModule } from 'src/components/line-chart/line-chart.module';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 @NgModule({
@@ -15,7 +16,8 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
     BrowserModule,
     AppRoutingModule,
     GridModule,
-    BarChartModule
+    BarChartModule,
+    LineChartModule
   ],
   providers: [],
   bootstrap: [AppComponent],

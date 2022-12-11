@@ -1,0 +1,31 @@
+<div id="line-chart-container">
+    <dx-chart id="line-chart" palette="Violet" [dataSource]="data.details">
+      <dxi-series
+        *ngFor="let source of data.sources"
+        [valueField]="source.value"
+        [name]="source.name"
+      >
+      </dxi-series>
+      <dxo-common-series-settings
+        #seriesSettings
+        argumentField="country"
+        [type]="'line'"
+      >
+      </dxo-common-series-settings>
+      <dxo-margin [bottom]="20"></dxo-margin>
+      <dxo-argument-axis
+        [valueMarginsEnabled]="false"
+        discreteAxisDivisionMode="crossLabels"
+      >
+        <dxo-grid [visible]="true"></dxo-grid>
+      </dxo-argument-axis>
+      <dxo-legend
+        verticalAlignment="bottom"
+        horizontalAlignment="center"
+        itemTextPosition="bottom"
+      >
+      </dxo-legend>
+      <!-- <dxo-export [enabled]="true"></dxo-export> -->
+      <dxo-tooltip [enabled]="true"></dxo-tooltip>
+    </dx-chart>
+  </div>
