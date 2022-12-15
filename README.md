@@ -1,4 +1,4 @@
-# Attendance-Tracker-Dashboard
+# Energy-Consumption-Dashboard
 #For setting up the app on local
 
 Step1: Fork the app in your repo
