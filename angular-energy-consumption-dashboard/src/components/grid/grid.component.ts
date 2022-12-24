@@ -18,7 +18,6 @@ import { GridDataService } from '../../services/grid-data.service'
     ) {}
 
     ngOnInit(): void {
-      console.log("Hello There!!!");
       this.data = this._gridDataService.getGridData();
     }
 

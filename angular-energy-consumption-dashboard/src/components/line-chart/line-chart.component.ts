@@ -18,7 +18,6 @@ import { LineChartDataService } from '../../services/line-chart.service'
     ) {}
 
     ngOnInit(): void {
-      console.log("Hello From Line Chart!!!");
       this.data = this._lineChartDataService.getBarChartData();
     }
 

@@ -18,7 +18,6 @@ import { BarChartDataService } from '../../services/bar-chart.service'
     ) {}
 
     ngOnInit(): void {
-      console.log("Hello From Bar Chart!!!");
       this.data = this._barChartDataService.getBarChartData();
     }
 
