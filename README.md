@@ -13,3 +13,8 @@ npm install -g @angular/cli@latest
 Step2: Build and Run the app by following command:
 
 ng serve --open
+
+On running the app, this page should come up:
+
+![image](https://user-images.githubusercontent.com/31767167/236659006-efd294c5-5c71-4844-87bd-2de6d936052f.png)
+
